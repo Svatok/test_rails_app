@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get 'multithreading/threads', to: 'multithreading#threads'
   get 'multithreading/fibers', to: 'multithreading#fibers'
+  get 'multithreading/processes', to: 'multithreading#processes'
 end

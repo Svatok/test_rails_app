@@ -10,4 +10,10 @@ class MultithreadingController < ApplicationController
 
     render json: {}, status: 200
   end
+
+  def processes
+    Multithreading::Operation::Processes.call(params: params)
+
+    render json: {}, status: 200
+  end
 end
