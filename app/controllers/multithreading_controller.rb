@@ -16,4 +16,10 @@ class MultithreadingController < ApplicationController
 
     render json: {}, status: 200
   end
+
+  def concurrent_threads
+    Multithreading::Operation::ConcurrentThreads.call(params: params)
+
+    render json: {}, status: 200
+  end
 end
