@@ -1,5 +1,7 @@
 module Multithreading::Operation
-  class Processes < Base
+  class Processes < Trailblazer::Operation
+    include Multithreading::Lib::PerformAction
+
     step :generate_processes
     step :wait_for_processes_finish
 

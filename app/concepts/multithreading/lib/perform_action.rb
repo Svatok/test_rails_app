@@ -1,5 +1,5 @@
-module Multithreading::Operation
-  class Base < Trailblazer::Operation
+module Multithreading::Lib
+  module PerformAction
     DEFAULT_SLEEP = 1
     DEFAULT_ACTION = 'sleep'
 

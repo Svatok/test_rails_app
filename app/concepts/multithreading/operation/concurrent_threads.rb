@@ -1,5 +1,7 @@
 module Multithreading::Operation
-  class ConcurrentThreads < Base
+  class ConcurrentThreads < Trailblazer::Operation
+    include Multithreading::Lib::PerformAction
+
     step :generate_threads
 
     DEFAULT_COUNT = 10

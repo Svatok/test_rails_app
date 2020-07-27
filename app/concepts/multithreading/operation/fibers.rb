@@ -1,5 +1,7 @@
 module Multithreading::Operation
-  class Fibers < Base
+  class Fibers < Trailblazer::Operation
+    include Multithreading::Lib::PerformAction
+
     step :generate_fibers
 
     DEFAULT_COUNT = 100
